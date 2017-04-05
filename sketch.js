@@ -6,6 +6,8 @@ var bon = 40;
 var hi = 0;
 var we = 10;
 var bye = 150;
+var mySound;
+
 
 function setup(){
     createCanvas(600,400);
