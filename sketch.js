@@ -1,5 +1,5 @@
 var numbers = [15, 22, 48, 37];
-var habits = ["Hunger Games", "Katniss", "District 12", "Peeta", "Effie", "District 13", "President Snow", "Prim", "Hamitch"];
+var habits = ["People keep stoppin' me", "People, they're noticin' somethin' is different", "Everything's different 'bout me", "I was just mindin' my" ,"business", "When I saw the light, somethin' is different", "Everything's different this time", "Don't stop", " takin' all of my time,", "make it all yours", "Keep on,", "cause my heart likes the rush", "So please give me more, more, more, more", "Boy, this is crazy", "'cause ya' came out of thin air", "You must be magic", "Whatcha doin',", "it ain't there", "Oh, oh, oh, oh (yep!)", "Oh, oh, oh, oh (yep!)", "You got that perfect time", "and baby", "And I swear our chemistry is glowin'", "Made the whole world stare", "Oh, oh, oh, oh (yep!)(1)", "Oh, oh, oh, oh (yep!)(2)", "Boy, you came out of thin air," , "thin air, thin air" , "Like you always been there,", "been there, been there", "Before you, I didn't care," , "I didn't care, I didn't care", "You came out of thin air,", "you came out of thin air", "I want", "gold with your love", "I won't" , "ever give you up", "Pull me in closer", "Not scared to admit", "I want your touch", "Your voice", "is a symphony", "Singin'", "sweet melodies", "Pull me in closer", "'Cause when my world's over, ya' got me", "Don't stop", "takin' all of my time, make it all yours", "Keep on, ", "'cause my heart likes the rush", "So please give me more,", "more, more, more", "Boy, this is crazy", "'cause ya' came out of thin air", "You must be magic", "Whatcha doin', it ain't there", "Oh, oh, oh, oh (yep!)(1)", "Oh, oh, oh, oh (yep!)(2)", "You got that perfect time", "and baby; And I swear", "our chemistry is glowin'", "Made the whole world stare", "Oh, oh, oh, oh (yep!)(1)", "Oh, oh, oh, oh (yep!)(2)", "Boy, you came out of thin air", "thin air, thin air", "Like you always been there", "been there, been there", "Before you, I didn't care,", "I didn't care, I didn't care", "You came out of, thin air,", "you came out of thin air", "Oh!", "Like you checkin' on me", "Yeah, I've been watchin', too", "It's like you're just a diva", "You never knew", "I felt this, too", "But now we're here", "with nowhere left to hide", "The way you're lookin' at me,", "it's how I look at you", "Don't need space in between", "Just cut the tension right through", "Real soon,", "we can fly to thin air to check the view", "Ye-yeah!", "Boy, this is crazy " , "'cause ya' came out of thin air", "You must be magic", "Whatcha doin'", "it ain't there", "Oh, oh, oh, oh (yep!)(1)" , "Oh, oh, oh, oh (yep!)(2)", "You got that perfect time", "and baby; And I swear", "our chemistry is glowin'", "Made the whole world stare", "Oh, oh, oh, oh (yep!)(1)", "Oh, oh, oh, oh (yep!)(2)", "Boy, you came out of thin air", "thin air, thin air", "Like you always been there,", "been there, been there", "Before you, I didn't care,", "I didn't care, I didn't care", "Came out of thin air", "you came out of thin air", "THE END"];
 var w = ["BOLD", "ITALIC", "NORMAL"];
 var j = 0;
 var bon = 40;
@@ -32,26 +32,14 @@ function draw(){
         ellipse((i+1)*100,200,numbers[i],numbers[i]);
     }
     
-if(keyIsDown(UP_ARROW)){
-    bon = bon + 1;
-    if(bon >= 55){
-        bon = 55;
-    }
-}
-if(keyIsDown(DOWN_ARROW)){
-    bon -= 1;
-    if(bon <= 5){
-        bon = 5;
-    }
-}
+
 
    
    fill(255);
-   textSize(bon);
-   textAlign(CENTER);
+   textSize(27);
    textStyle(BOLD);
    strokeWeight(1);
-   text(habits[j], 220, 150);
+   text(habits[j], 10, 100);
 }
 
 function mousePressed(){
