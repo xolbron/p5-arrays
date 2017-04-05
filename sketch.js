@@ -45,6 +45,7 @@ function draw(){
 function mousePressed(){
     j += 1;
     if(j == habits.length){
+        alert("Congrats!!!, You finished the song.");
         j = 0;
     }
 }
